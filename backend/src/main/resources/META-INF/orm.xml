@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_0.xsd"
+                 version="2.0">
+
+<sql-result-set-mapping name="SearchEngineerVendorXml">
+    <constructor-result target-class="com.springBlog.pojo.SearchEngineerVendor">
+        <column name="engineerVendorId" class="java.lang.Long" /> 
+        <column name="category" class="java.lang.String" />        
+        <column name="username" class="java.lang.String"/>
+        <column name="company" class="java.lang.String"/>
+        <column name="description" class="java.lang.String"/>
+        <column name="district" class="java.lang.String"/>
+        <column name="email" class="java.lang.String"/>
+        <column name="phone" class="java.lang.String"/>
+    </constructor-result>
+</sql-result-set-mapping>
+
+<sql-result-set-mapping name="SearchSupplierXml">
+    <constructor-result target-class="com.springBlog.pojo.SearchSupplier">
+        <column name="supplierId" class="java.lang.Long" /> 
+        <column name="category" class="java.lang.String" />        
+        <column name="username" class="java.lang.String"/>
+        <column name="company" class="java.lang.String"/>
+        <column name="description" class="java.lang.String"/>
+        <column name="district" class="java.lang.String"/>
+        <column name="email" class="java.lang.String"/>
+        <column name="phone" class="java.lang.String"/>
+    </constructor-result>
+</sql-result-set-mapping>
+
+<sql-result-set-mapping name="SearchReceivedTenderXml">
+    <constructor-result target-class="com.springBlog.pojo.SearchReceivedTender">
+        <column name="tenderDetailId" class="java.lang.Long" /> 
+        <column name="username" class="java.lang.String" /> 
+        <column name="company" class="java.lang.String" />        
+        <column name="title" class="java.lang.String"/>
+        <column name="fromDate" class="java.lang.String"/>
+        <column name="toDate" class="java.lang.String"/>
+        <column name="minimumPrice" class="java.lang.Integer"/>
+        <column name="maximumPrice" class="java.lang.Integer"/>
+        <column name="dateAdded" class="java.lang.String"/>
+        <column name="dateExpired" class="java.lang.String"/>
+    </constructor-result>
+</sql-result-set-mapping>
+
+<sql-result-set-mapping name="SearchCurrentTenderXml">
+    <constructor-result target-class="com.springBlog.pojo.SearchCurrentTender">
+        <column name="tenderId" class="java.lang.Long" />       
+        <column name="title" class="java.lang.String"/>
+        <column name="fromDate" class="java.lang.String"/>
+        <column name="toDate" class="java.lang.String"/>
+        <column name="minimumPrice" class="java.lang.Integer"/>
+        <column name="maximumPrice" class="java.lang.Integer"/>
+        <column name="dateAdded" class="java.lang.String"/>
+        <column name="dateExpired" class="java.lang.String"/>
+        <column name="companyType" class="java.lang.String"/>
+    </constructor-result>
+</sql-result-set-mapping>
+
+<sql-result-set-mapping name="SearchTenderDetailXml">
+    <constructor-result target-class="com.springBlog.pojo.SearchTenderDetail">
+        <column name="tenderDetailId" class="java.lang.Long" />       
+        <column name="accepted" class="java.lang.String"/>
+        <column name="bidded" class="java.lang.String"/>
+        <column name="remarks" class="java.lang.String"/>
+        <column name="price" class="java.lang.Integer"/>
+        <column name="username" class="java.lang.String"/>
+        <column name="companyName" class="java.lang.String"/>
+    </constructor-result>
+</sql-result-set-mapping>
+
+</entity-mappings>
